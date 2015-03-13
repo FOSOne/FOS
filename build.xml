@@ -8,8 +8,6 @@
 
     <property name="main-class"  value="oata.HelloWorld"/>
 
-
-
     <target name="clean">
         <delete dir="${build.dir}"/>
     </target>
@@ -18,6 +16,14 @@
         <mkdir dir="${classes.dir}"/>
         <javac srcdir="${src.dir}" destdir="${classes.dir}"/>
     </target>
+	
+	<target name='test' description='Run all JUnit tests.' depends='compile'>
+	     <junit haltonfailure='false'> 
+	       <classpath>
+	         <pathelement location="${src.dir}"/>
+	       </classpath>
+	     </junit>
+	</target>
 
     <target name="jar" depends="compile">
         <mkdir dir="${jar.dir}"/>
