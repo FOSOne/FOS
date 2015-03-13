@@ -19,6 +19,7 @@
 	
 	<target name='test' description='Run all JUnit tests.' depends='compile'>
 	     <!--
+	     build on build file change??
 	     <junit haltonfailure='false'> 
 	       <classpath>
 	         <pathelement location="${src.dir}"/>
