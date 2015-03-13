@@ -1,7 +1,7 @@
 public class Test {
 	// hello
 	@Test
-	public boolean returnTrue {
+	public boolean returnTrue() {
 		return true;
 	}
 }
