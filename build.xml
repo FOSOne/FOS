@@ -18,11 +18,13 @@
     </target>
 	
 	<target name='test' description='Run all JUnit tests.' depends='compile'>
+	     <!--
 	     <junit haltonfailure='false'> 
 	       <classpath>
 	         <pathelement location="${src.dir}"/>
 	       </classpath>
 	     </junit>
+	     -->
 	</target>
 
     <target name="jar" depends="compile">
