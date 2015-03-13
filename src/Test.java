@@ -1,3 +1,5 @@
+import junit.*;
+
 public class Test {
 	// hello
 	@Test
